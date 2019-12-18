@@ -1,0 +1,23 @@
+Started by user [8mha:////4JLemD6PK/LdMe4y2Kwr2IYZVVA2m2ME7QLPiZTPO246AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYB/dLi1CL95IyCosTsxMTiDAAFuqWdxQAAAA==[0mCh Prakaash
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/Development
+No credentials specified
+Cloning the remote Git repository
+Cloning repository https://github.com/intelliqittrainings/maven.git
+ > git init /home/ubuntu/.jenkins/workspace/Development # timeout=10
+Fetching upstream changes from https://github.com/intelliqittrainings/maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/intelliqittrainings/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/intelliqittrainings/maven.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url https://github.com/intelliqittrainings/maven.git # timeout=10
+Fetching upstream changes from https://github.com/intelliqittrainings/maven.git
+ > git fetch --tags --progress -- https://github.com/intelliqittrainings/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e8baa88dc234936546fe4d4ce3c68b09ad1dae1a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e8baa88dc234936546fe4d4ce3c68b09ad1dae1a # timeout=10
+Commit message: "zsd"
+First time build. Skipping changelog.
+Finished: SUCCESS

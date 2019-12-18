@@ -1,0 +1,65 @@
+Started by user [8mha:////4JLemD6PK/LdMe4y2Kwr2IYZVVA2m2ME7QLPiZTPO246AAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYB/dLi1CL95IyCosTsxMTiDAAFuqWdxQAAAA==[0mCh Prakaash
+Running as SYSTEM
+Building in workspace /home/ubuntu/.jenkins/workspace/Development
+No credentials specified
+ > git rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/intelliqittrainings/maven.git # timeout=10
+Fetching upstream changes from https://github.com/intelliqittrainings/maven.git
+ > git --version # timeout=10
+ > git fetch --tags --progress -- https://github.com/intelliqittrainings/maven.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision e8baa88dc234936546fe4d4ce3c68b09ad1dae1a (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f e8baa88dc234936546fe4d4ce3c68b09ad1dae1a # timeout=10
+Commit message: "zsd"
+ > git rev-list --no-walk e8baa88dc234936546fe4d4ce3c68b09ad1dae1a # timeout=10
+[Development] $ mvn toplevel
+[[1;34mINFO[m] Scanning for projects...
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:server:jar:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:webapp:war:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] Some problems were encountered while building the effective model for com.example.maven-project:maven-project:pom:1.0-SNAPSHOT
+[[1;33mWARNING[m] Reporting configuration should be done in <reporting> section, not in maven-site-plugin <configuration> as reportPlugins parameter. @ line 56, column 24
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] It is highly recommended to fix these problems because they threaten the stability of your build.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] For this reason, future Maven versions might no longer support building such malformed projects.
+[[1;33mWARNING[m] 
+[[1;33mWARNING[m] The project com.example.maven-project:maven-project:pom:1.0-SNAPSHOT uses prerequisites which is only intended for maven-plugin projects but not for non maven-plugin projects. For such purposes you should use the maven-enforcer-plugin. See https://maven.apache.org/enforcer/enforcer-rules/requireMavenVersion.html
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Build Order:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project                                                      [pom]
+[[1;34mINFO[m] Server                                                             [jar]
+[[1;34mINFO[m] Webapp                                                             [war]
+[[1;34mINFO[m] 
+[[1;34mINFO[m] [1m--------------< [0;36mcom.example.maven-project:maven-project[0;1m >---------------[m
+[[1;34mINFO[m] [1mBuilding Maven Project 1.0-SNAPSHOT                                [1/3][m
+[[1;34mINFO[m] [1m--------------------------------[ pom ]---------------------------------[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1mReactor Summary for Maven Project 1.0-SNAPSHOT:[m
+[[1;34mINFO[m] 
+[[1;34mINFO[m] Maven Project ...................................... [1;31mFAILURE[m [  0.007 s]
+[[1;34mINFO[m] Server ............................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] Webapp ............................................. [1;33mSKIPPED[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] [1;31mBUILD FAILURE[m
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;34mINFO[m] Total time:  0.302 s
+[[1;34mINFO[m] Finished at: 2019-12-13T06:20:15Z
+[[1;34mINFO[m] [1m------------------------------------------------------------------------[m
+[[1;31mERROR[m] Unknown lifecycle phase "toplevel". You must specify a valid lifecycle phase or a goal in the format <plugin-prefix>:<goal> or <plugin-group-id>:<plugin-artifact-id>[:<plugin-version>]:<goal>. Available lifecycle phases are: validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy, pre-clean, clean, post-clean, pre-site, site, post-site, site-deploy. -> [1m[Help 1][m
+[[1;31mERROR[m] 
+[[1;31mERROR[m] To see the full stack trace of the errors, re-run Maven with the [1m-e[m switch.
+[[1;31mERROR[m] Re-run Maven using the [1m-X[m switch to enable full debug logging.
+[[1;31mERROR[m] 
+[[1;31mERROR[m] For more information about the errors and possible solutions, please read the following articles:
+[[1;31mERROR[m] [1m[Help 1][m http://cwiki.apache.org/confluence/display/MAVEN/LifecyclePhaseNotFoundException
+Build step 'Invoke top-level Maven targets' marked build as failure
+Finished: FAILURE
